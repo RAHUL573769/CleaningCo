@@ -43,6 +43,9 @@ const Navbar = ({ children }) => {
                 <li>
                   <Link to="/about">Contct Us</Link>
                 </li>
+                <li>
+                  <button data-toggle-theme="dark,light">Change</button>{" "}
+                </li>
               </ul>
             </div>
           </div>
