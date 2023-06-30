@@ -1,6 +1,7 @@
 import React from "react";
+import { Link, NavLink } from "react-router-dom";
 
-const Navbar = () => {
+const Navbar = ({ children }) => {
   return (
     <div>
       <div className="drawer drawer-end">
@@ -31,26 +32,32 @@ const Navbar = () => {
               <ul className="menu menu-horizontal">
                 {/* Navbar menu content here */}
                 <li>
-                  <a>Navbar Item 1</a>
+                  <NavLink to="/">Home</NavLink>
                 </li>
                 <li>
-                  <a>Navbar Item 2</a>
+                  <Link to="/about">About</Link>
+                </li>
+                <li>
+                  <Link to="/about">Services</Link>
+                </li>
+                <li>
+                  <Link to="/about">Contct Us</Link>
                 </li>
               </ul>
             </div>
           </div>
           {/* Page content here */}
-          Content
+          {children}
         </div>
         <div className="drawer-side">
           <label htmlFor="my-drawer-3" className="drawer-overlay"></label>
           <ul className="menu p-4 w-80 h-full bg-base-200">
             {/* Sidebar content here */}
             <li>
-              <a>Sidebar Item 1</a>
+              <Link>Sidebar Item 1</Link>
             </li>
             <li>
-              <a>Sidebar Item 2</a>
+              <Link>Sidebar Item 2</Link>
             </li>
           </ul>
         </div>
