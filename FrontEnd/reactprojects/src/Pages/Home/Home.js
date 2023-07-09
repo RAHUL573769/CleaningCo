@@ -3,9 +3,9 @@ import img from "../../../src/assets/image/bucketgirl.png";
 const Home = () => {
   return (
     <div>
-      <div className="hero min-h-screen bg-base-200 ">
+      <div className="hero min-h-screen bg-base-200">
         <div className="hero-content flex-col lg:flex-row-reverse">
-          <img src={img} className="max-w-sm rounded-lg shadow-2xl" alt="" />
+          <img src={img} />
           <div>
             <h1 className="text-5xl font-bold">Box Office News!</h1>
             <p className="py-6">
